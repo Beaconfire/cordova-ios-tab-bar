@@ -1,6 +1,6 @@
 {
   "name": "cordova-ios-tab-bar",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Cordova >=3 iOS Tab Bar plugin",
   "main": "",
   "directories": {
