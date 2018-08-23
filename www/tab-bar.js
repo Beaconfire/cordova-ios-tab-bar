@@ -101,6 +101,7 @@ TabBar.prototype.createTabBarItem = function ( name, label, image, options ) {
  * @param {String} name internal name used to represent this item when it was created
  * @param {Object} options Options for customizing the individual tab item
  *  - \c badge value to display in the optional circular badge on the item; if null or unspecified, the badge will be hidden
+ *  - \c title new title to display on the tab itself
  */
 TabBar.prototype.updateTabBarItem = function ( name, options ) {
     if ( !options ) options = {};

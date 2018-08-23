@@ -341,6 +341,7 @@
 
     NSArray *arguments = command.arguments;
     NSDictionary *options = [arguments objectAtIndex:1];
+    NSString *newTitle = [options objectForKey:@"title"];
 
     if (!tabBar) {
         [self createTabBar:nil];
@@ -350,6 +351,9 @@
     UITabBarItem *item = [tabBarItems objectForKey:name];
     if (item) {
         item.badgeValue = [options objectForKey:@"badge"];
+        if(newTitle){
+            item.title = newTitle;
+        }
     }
 
     CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
